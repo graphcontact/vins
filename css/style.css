@@ -10,23 +10,24 @@ html {
     font-family: 'Noto Sans JP', sans-serif;
     font-family: 'Lobster', cursive;
     width: 100vw;
-
 }
 
 
 h1 {
-    font-family: 'Lobster', cursive;
-    
+    font-family: 'Lobster', cursive; 
 }
 
-
-h4 {
+h3 {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
  
 }
 
+.p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 150%;
 
+}
 
 
 /* ****boutons**** */
@@ -60,10 +61,7 @@ h4 {
 ========== */
 .navbar a:hover {
     transform: scale(1.4,1.4);
-    transition: 0.5s
-    
-
-    
+    transition: 0.5s  
 }
 
 #logo-nav {
@@ -88,4 +86,18 @@ header {
     width: 45vw;
     padding-top: 15%;
     left: 45%;
+}
+
+
+/* *********QUI SOMMES-NOUS**************
+================ */
+
+#titre {
+    font-size: 4vw;
+    color: #B61719;
+}
+
+.texte-qui {
+    max-width: 80%;
+    padding: 2%;
 }
