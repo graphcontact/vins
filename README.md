@@ -1,4 +1,4 @@
 # vins
 
 
-https://github.com/graphcontact/vins.git
+https://graphcontact.github.io/vins/.
