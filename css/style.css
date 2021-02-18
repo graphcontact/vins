@@ -28,7 +28,7 @@ h1 {
 
 .p {
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 190%;
+    font-size: 110%;
 
 }
 
@@ -57,7 +57,7 @@ h1 {
 
 
 #btn-header {
-    margin-left: 80%;
+    margin-left: 70%;
     text-decoration: none;
     text-transform: none;
 }
