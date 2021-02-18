@@ -62,6 +62,11 @@ h1 {
     text-transform: none;
 }
 
+#btn-vins {
+        
+    
+}
+
 .btn-contact {
     color: black;
     background-color: white;
@@ -152,7 +157,9 @@ header {
 /* **** FOOTER ***** 
 ======================== */
 
-
+footer {
+    background-color: black;
+}
 
 footer i:hover {
     transition: 0.5s;
