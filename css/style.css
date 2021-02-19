@@ -22,7 +22,7 @@ h1 {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     text-transform: uppercase; 
-    color: #009E3C
+    color: #009E3C;
  
 }
 
@@ -36,7 +36,7 @@ h1 {
 /* ****boutons**** */
 
 .btn {
-    font-size: 160%;
+    font-size: 120%;
     color: white;
     background-color: #B61719;
     padding: 5px 15px;
@@ -56,7 +56,11 @@ h1 {
 }
 
 
-
+#btn-services {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
 
 .btn-contact {
     color: black;
@@ -68,16 +72,12 @@ h1 {
 /* ****NAVBAR******* 
 ========== */
 
-.navbar {
+.navbar-dark {
     background-color: #009E3C;  
-}
-
-.navbar a {
-    color: white
+    color: white;
 }
 
 .navbar a:hover {
-    color: #B61719;
     transform: scale(1.1,1.1);
     transition: 0.5s  
 }
@@ -101,7 +101,12 @@ header {
 
 .top-header {
     padding-top: 12vw;
-    padding-right: 25vw;
+    padding-left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
 }
 
 #logo-header {
@@ -115,7 +120,7 @@ header {
 ================ */
 
 .titre {
-    font-size: 4vw;
+    font-size: 70px;
     color: #B61719;
     padding-top: 3%;
 }
@@ -143,12 +148,35 @@ header {
     
 }
 
+.vins-roses {
+    text-align: right;
+}
+
+
 
 /* ***NOS SERVICES*************
 =============== */
 
+.services {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 95%
+}
+
+.degustation{
+    text-align: right;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 .services img {
-    width: 80%;
+    width: 90%;
 }
 
 /* ***CONTACT*************
@@ -176,22 +204,76 @@ footer i:hover {
 /* ****CONTACT******* 
 ========== */
 
+.form {
+    margin-left: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-direction: column;
+    padding-right: 12%;
+}
+
 .page-contact {
     background-color: black;
 
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: row
+}
 
 #name {
-    width: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 20px
 }
 
 select {
-    width: 50%;
+    width: 100%;
 
 }
 
 #message {
-    width: 85%;
+    width: 100%;
 }
+
+
+/* ******MEDIA QUERY******** */
+
+@media screen and (max-width: 768px) {
+    
+/* ***page vins*** */
+    
+    .page-vins {
+        text-align: center;
+    }
+    .vins-roses {
+        text-align: center;
+    }
+    
+    
+    /* ***services*** */
+    
+    .services {
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    
+    .degustation {
+        text-align: center;
+    }
+    
+    /* ***contact*** */
+    
+    .form {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding-left: 12%
+    }
+}
+
 
