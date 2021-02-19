@@ -296,7 +296,9 @@ iframe {
 
     /* ***header*** */
 
-    
+    header {
+        height: 100vh;
+    }
 
     .top-header {
         padding-left: 0%;
