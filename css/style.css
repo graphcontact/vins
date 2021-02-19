@@ -68,6 +68,10 @@ h1 {
     align-items: center;
 }
 
+.btn-degustation {
+    left: 10%;
+}
+
 .btn-contact {
     color: black;
     background-color: white;
@@ -174,7 +178,7 @@ header {
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 95%
+    width: 92%
 }
 
 .degustation {
@@ -193,6 +197,7 @@ header {
 .seuil {
     font-size: 15px
 }
+
 
 
 /* **** FOOTER ***** 
@@ -338,6 +343,9 @@ select {
         font-size: 10px;
     }
     
+    .btn-degustation {
+    left: 0%;
+}
     /* ***contact*** */
 
     .form {
