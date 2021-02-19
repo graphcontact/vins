@@ -21,9 +21,9 @@ h1 {
 .h2 {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     color: #009E3C;
- 
+    font-size: 30px
 }
 
 .p {
@@ -44,7 +44,7 @@ h1 {
     box-shadow: black 2px 4px 5px 0px;
     text-decoration: none;
     text-transform: none;
-    
+
 }
 
 .btn:hover {
@@ -53,6 +53,12 @@ h1 {
     background-color: #009E3C;
     color: white;
     transition: 0.5s
+}
+
+.btn-header {
+    padding-left: 23%;
+    margin-top: -60px
+
 }
 
 
@@ -73,17 +79,17 @@ h1 {
 ========== */
 
 .navbar-dark {
-    background-color: #009E3C;  
+    background-color: #009E3C;
     color: white;
 }
 
 .navbar a:hover {
-    transform: scale(1.1,1.1);
-    transition: 0.5s  
+    transform: scale(1.1, 1.1);
+    transition: 0.5s
 }
 
 #logo-nav {
-    width: 9vw;
+    width: 10vw;
 }
 
 
@@ -100,19 +106,19 @@ header {
 }
 
 .top-header {
-    padding-top: 12vw;
     padding-left: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    
+
 }
 
 #logo-header {
+    padding-top: 30%;
     position: relative;
     width: 50vw;
-    
+
 }
 
 
@@ -127,9 +133,14 @@ header {
 
 .texte-qui {
     max-width: 80%;
-    padding: 2%;
+    padding: 0 5% 0 5%;
 }
 
+.quisommesnous {
+    width: 75%;
+    height 110vh;
+    margin: 0 auto;
+}
 
 /* ***NOS VINS*************
 =============== */
@@ -145,7 +156,7 @@ header {
     height: 100%;
     border-radius: 15px;
     box-shadow: black 0px 5px 10px 0px;
-    
+
 }
 
 .vins-roses {
@@ -166,7 +177,7 @@ header {
     width: 95%
 }
 
-.degustation{
+.degustation {
     text-align: right;
     margin: 0 auto;
     display: flex;
@@ -179,13 +190,10 @@ header {
     width: 90%;
 }
 
-/* ***CONTACT*************
-=============== */
-
-.contact {
-    background-color: black;
-
+.seuil {
+    font-size: 15px
 }
+
 
 
 /* **** FOOTER ***** 
@@ -203,6 +211,11 @@ footer i:hover {
 
 /* ****CONTACT******* 
 ========== */
+
+.contact {
+    background-color: black;
+
+}
 
 .form {
     margin-left: 50%;
@@ -243,31 +256,91 @@ select {
 /* ******MEDIA QUERY******** */
 
 @media screen and (max-width: 768px) {
-    
-/* ***page vins*** */
-    
-    .page-vins {
-        text-align: center;
+
+    .h2 {
+        font-size: 15px;
+        text-align: center
     }
+
+    .p {
+        font-size: 15px;
+        text-align: justify;
+    }
+    
+    .titre {
+        font-size: 40px;
+        padding-top: 20px
+    }
+
+    /* ***header*** */
+   
+    header {
+        height: 70vh;
+    }
+
+    .top-header {
+        padding-left: 0%;
+        padding-top: 12vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    #logo-header {
+        padding-top: 40%;
+        position: relative;
+        width: 100vw;
+
+    }
+
+    .btn-header {
+    padding-left: 0%;
+    margin-top: 0%
+
+}
+    .vins img {
+        width: 16vw
+    }
+    
+    
+    /* ***page vins*** */
+
+    
     .vins-roses {
-        text-align: center;
+        flex-direction: column-reverse;
     }
-    
+
+    .page-vins img {
+        width: 16vw
+    }
     
     /* ***services*** */
-    
+
     .services {
-        text-align: center;
+        text-align: justify;
         margin: 0 auto;
 
     }
-    
+
+    .texte-livraison {
+        flex-direction: column-reverse;
+    }
+
     .degustation {
         text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    
+    .seuil {
+        font-size: 10px;
     }
     
     /* ***contact*** */
-    
+
     .form {
         margin: 0 auto;
         display: flex;
@@ -275,5 +348,3 @@ select {
         padding-left: 12%
     }
 }
-
-
