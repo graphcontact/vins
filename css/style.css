@@ -58,7 +58,6 @@ h1 {
 .btn-header {
     padding-left: 23%;
     margin-top: -60px
-
 }
 
 
@@ -83,7 +82,6 @@ h1 {
 ========== */
 
 .navbar-dark {
-    background-color: #009E3C;
     color: white;
 }
 
@@ -102,7 +100,7 @@ h1 {
 
 header {
     background-image: linear-gradient(to top right, rgba(78, 0, 1, 0.9), rgba(111, 7, 3, 0.25),
-            rgba(0, 158, 60, 0.72)), url("../ressources/Images/header-bouteilles.jpg");
+            rgba(0, 158, 60, 0.79)), url("../ressources/Images/header-bouteilles.jpg");
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -122,7 +120,7 @@ header {
     padding-top: 30%;
     position: relative;
     width: 50vw;
-
+    
 }
 
 
@@ -138,12 +136,14 @@ header {
 .texte-qui {
     max-width: 80%;
     padding: 0 5% 0 5%;
+    
 }
 
 .quisommesnous {
     width: 75%;
     height 110vh;
     margin: 0 auto;
+    
 }
 
 /* ***NOS VINS*************
@@ -152,6 +152,7 @@ header {
 .nos-vins {
     background-color: #B61719;
     margin: 0 auto;
+    
 }
 
 .vins {
@@ -160,13 +161,14 @@ header {
     height: 100%;
     border-radius: 15px;
     box-shadow: black 0px 5px 10px 0px;
-
 }
+
+
 
 .vins-roses {
     text-align: right;
+    
 }
-
 
 
 /* ***NOS SERVICES*************
@@ -221,13 +223,19 @@ footer i:hover {
 
 }
 
-.form {
-    margin-left: 50%;
+.coordonnees {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center
+}
+
+.form {
+    width: 40%;
+    display: flex;
+    justify-content: center;
     align-content: center;
-    flex-direction: column;
-    padding-right: 12%;
+    flex-flow: column;
+
 }
 
 .page-contact {
@@ -237,14 +245,14 @@ footer i:hover {
 
 .contact-form {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
 }
 
 #name {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-left: 20px
+ 
 }
 
 select {
@@ -254,6 +262,10 @@ select {
 
 #message {
     width: 100%;
+}
+
+iframe {
+   filter: grayscale(30%);
 }
 
 
@@ -270,14 +282,20 @@ select {
         font-size: 15px;
         text-align: justify;
     }
-    
+
     .titre {
         font-size: 40px;
         padding-top: 20px
     }
 
+
+    #logo-nav {
+        width: 20vw;
+    }
+
+
     /* ***header*** */
-   
+
     header {
         height: 70vh;
     }
@@ -290,7 +308,6 @@ select {
         justify-content: center;
         align-items: center;
         align-content: center;
-
     }
 
     #logo-header {
@@ -301,26 +318,26 @@ select {
     }
 
     .btn-header {
-    padding-left: 0%;
-    margin-top: 0%
+        padding-left: 0%;
+        margin-top: 0%;
+    }
 
-}
     .vins img {
         width: 16vw
     }
-    
-    
+
+
     /* ***page vins*** */
 
-    
+
     .vins-roses {
         flex-direction: column-reverse;
     }
 
     .page-vins img {
-        width: 16vw
+        width: 16vw;
     }
-    
+
     /* ***services*** */
 
     .services {
@@ -338,20 +355,21 @@ select {
         flex-direction: column-reverse;
     }
 
-    
+
     .seuil {
         font-size: 10px;
     }
-    
+
     .btn-degustation {
-    left: 0%;
-}
+        left: 0%;
+    }
+
     /* ***contact*** */
 
-    .form {
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        padding-left: 12%
+   .form {
+    width: 75%;
     }
-}
+    
+    iframe {
+        width: 85%;
+    }
